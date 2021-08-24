@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Object Detection </title>
+</head>
+<body>
+<h1>Object Detection using Tensorflow and Keras </h1>
+<form action="imgupload/imageprocess" method="POST" enctype="multipart/form-data">
+{% csrf_token %}
+<div class="one">
+<input id=image type="file" name="image"/>
+<input type="submit" value="Submit">
+</div>
+</body>
+<style>
+body
+{
+background-image:url("https://raw.githubusercontent.com/pavan330/Object-Detection-using-Tensorflow/main/fin.png");
+height: 500px;
+
+/* Center and scale the image nicely */
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+h1
+{
+text-align:center;
+}
+.one
+{
+text-align:center;
+padding-top:200px;
+}
+
+</style>
+</html>

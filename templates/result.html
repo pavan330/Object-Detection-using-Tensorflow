@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Results</title>
+</head>
+<body>
+<h1>Prediction</h1>
+<div class="two">
+{% for r,p in res %}
+	{{r}} {{p}}%<br/>
+{% endfor %}
+</div>
+</body>
+<style>
+body
+{
+background-image:url("https://raw.githubusercontent.com/pavan330/Object-Detection-using-Tensorflow/main/fin2.png");
+height: 500px;
+
+/* Center and scale the image nicely */
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+h1
+{
+text-align:center;
+}
+.two
+{
+text-align:center;
+padding-top:150px;
+font-size: 30px;
+}
+</style>
+</html>
